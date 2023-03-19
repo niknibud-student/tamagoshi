@@ -7,6 +7,7 @@ pygame.display.set_caption('Симулятор жизни')  # Устанавл�
 
 # Загружаем картинку
 cornmen_image = pygame.image.load("hero.png").convert_alpha()
+cornmen_image = pygame.transform.smoothscale(cornmen_image, (180, 260))
 # Обозначаем форму и фиксируем координаты картинки на экране
 cornmen_rect = cornmen_image.get_rect(center=(250, 200))
 
