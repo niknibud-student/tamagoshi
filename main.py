@@ -1,9 +1,7 @@
-import pygame  # импортируем библиотеку
+from settings import *
 
-BLUE = (175, 226, 207)  # Цвет фона в формате RGB
-
-window = pygame.display.set_mode((500, 400))  # Создаем окно 500 на 400
-pygame.display.set_caption('Симулятор жизни')  # Устанавливаем заголовок
+window = pygame.display.set_mode((GAME_HEIGHT, GAME_WIDTH))  # Создаем окно 500 на 400
+pygame.display.set_caption(GAME_NAME)  # Устанавливаем заголовок
 
 # Загружаем картинку
 cornmen_image = pygame.image.load("hero.png").convert_alpha()
